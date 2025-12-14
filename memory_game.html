@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="memory_game.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="stylenavbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <title>The Eclipse Fun Station | Memory Game</title>
+    <script src="memory_game.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand-title">The Eclipse Fun Station</div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #fefb00;"></i>
+                    Home</a></li>
+                <li><a href="#memory_game.html"><i class="fa-brands fa-space-awesome" style="color: #fefb00;"></i>
+                    Memory Game</a></li>
+                <li><a href="theeclipse.html"><i class="fa-brands fa-space-awesome" style="color: #fefb00;"></i>
+                    What's an Eclipse?</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-face-smile fa-spin" style="color: #fefb00;"></i>
+                    About This Project</a></li>
+                
+            </ul>
+    </nav>
+
+    <div class="main"></div>
+
+    <script>
+
+
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+
+        const STAR_COUNT = 400
+        let result = ""
+        for (let i = 0; i < STAR_COUNT; i++) {
+            result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
+        }
+        console.log(result.substring(0, result.length - 1))
+
+    </script>
+
+
+<script src="https://kit.fontawesome.com/e3617d0e65.js" crossorigin="anonymous"></script>
+    <h1 class="page-title">Memory Game</h1>
+    <div class="overlay-text visible">
+        Start Game
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        GAME OVER
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        VICTORY
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo card-value" 
+                src="images/annular solar eclipse.png"></div>
+                <div class="card-back card-face">
+                <img class="ecplise-photo spider" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" 
+                src="images/annular solar eclipse.png"></div>
+                <div class="card-back card-face">
+                <img class="ecplise-photo spider" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="ecplise-photo" src="images/eclipsecardcover.png">
+            </div>
+        </div>
+        
+       
+</body>
+
+</html>

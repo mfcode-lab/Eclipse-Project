@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="memory_game.css">
+    <link rel="stylesheet" href="stylenavbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <title>The Eclipse Fun Station</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand-title"> The Eclipse Fun Station</div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #fefb00;"></i>
+                        Home</a></li>
+                <li><a href="memory_game.html"><i class="fa-brands fa-space-awesome" style="color: #fefb00;"></i>
+                        Memory Game</a></li>
+                <li><a href="theeclipse.html"><i class="fa-brands fa-space-awesome" style="color: #fefb00;"></i>
+                        What's an Eclipse?</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-face-smile fa-spin" style="color: #fefb00;"></i>
+                        About This Project</a></li>
+
+            </ul>
+    </nav>
+    <h1 class="page-title">The Project</h1>
+
+    <div class="text_box">
+
+        <h1><i class="fa-solid fa-diagram-project fa-lg" style="color: #000000;"></i><span> The Creature</span></h1>
+
+        <p>The Eclipse Fun Station is a project developed for the NASA SPACE APP HACKATHON 2023. It is based on the
+            challenge "Eclipses: Perspective is Everything" This challenge requested participants to create an activity,
+            game, or story explaining the mechanics of an eclipse.</p>
+        <br>
+        <p>For this project we created a memory game with the different types of eclipses and we included an additional
+            page so people can read about how eclipses occur and more. The project was developed with HTML, CSS and
+            Javascript and tries to offer a simple but fun online activity page for kids and adults to learn about
+            eclipses.</p>
+
+        <h1><i class="fa-regular fa-face-smile fa-spin fa-lg" style="color: #000000;"></i><span> The Creator </span>
+        </h1>
+
+        <p>My name is Monisa Felson. I am a 36-year-old aspiring developer attending Penn State University. I decided to
+            learn how to code back in 2021 and since then I have been working on my craft and looking for opportunities
+            to showcase what I have learned so far. I am very enthusiastic when it comes to learn to code, and I hope to
+            be an inspiration for all the many adults who dream to make a career switch as well as learn to code later
+            in life. I also hope to help Latin women like me gain more perspective of the journey to build a career in
+            tech.</p>
+
+    </div>
+    <div class="main"></div>
+
+    <script>
+
+
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+
+        const STAR_COUNT = 400
+        let result = ""
+        for (let i = 0; i < STAR_COUNT; i++) {
+            result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
+        }
+        console.log(result.substring(0, result.length - 1))
+
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/e3617d0e65.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

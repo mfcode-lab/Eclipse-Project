@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="styleeclipse.css">
+    <link rel="stylesheet" href="stylenavbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>The Eclipse Fun Station</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div> <a href="index.html" class="active">
+                <h1 class="brand-title">The Eclipse Fun Station</h1>
+            </a>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+
+                <li><a href="memory_game.html"><i class="fa-brands fa-space-awesome" style="color: #fefb00;"></i>
+                        Memory Game</a></li>
+                <li><a href="#"><i class="fa-brands fa-space-awesome" style="color: #fefb00;"></i>
+                        What's an Eclipse?</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-face-smile fa-spin" style="color: #fefb00;"></i>
+                        About This Project</a></li>
+               
+            </ul>
+    </nav>
+
+
+    <div class="main"></div>
+
+
+    <div class="sun">
+        <div class="moon"></div>
+
+    </div>
+    </div>
+
+
+  <!-- scripts for the link icons  -->
+
+    <script src="https://kit.fontawesome.com/e3617d0e65.js" crossorigin="anonymous"></script>
+
+     <!-- scripts for the effects of sky in the background --> 
+    
+    <script>
+
+
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+
+        const STAR_COUNT = 400
+        let result = ""
+        for (let i = 0; i < STAR_COUNT; i++) {
+            result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
+        }
+        console.log(result.substring(0, result.length - 1))
+
+    </script>
+
+      
+
+</body>
+
+</html>
