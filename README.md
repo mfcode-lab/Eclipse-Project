@@ -23,7 +23,7 @@ This project was developed for the **NASA International Space Apps Challenge 202
 - Games
 
 ## Technologies Used
-- [List your stack here, e.g., HTML/CSS/JavaScript]
+- [HTML/CSS/JavaScript]
 - NASA open data for some images
 
 ## How to Run Locally
